@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="prism.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>AliLynne's Portfolio</title>
   </head>
   <body class="body">
@@ -90,11 +90,23 @@
         method="POST"
         data-netlify="true"
       >
-        <label>Your Name: <input type="text" name="name" /></label>
+        <h2 class="contact-form__heading">Contact Me</h2>
+        <fieldset class="contact-form__fieldset">
+          <label class="contact-form__label"
+            >Your Name:
+            <input class="contact-form__input" type="text" name="name"
+          /></label>
 
-        <label>Your Email: <input type="email" name="email" /></label>
+          <label class="contact-form__label"
+            >Your Email:
+            <input class="contact-form__input" type="email" name="email"
+          /></label>
 
-        <label>Message: <textarea name="message"></textarea></label>
+          <label class="contact-form__label"
+            >Message:
+            <textarea class="contact-form__input" name="message"></textarea>
+          </label>
+        </fieldset>
 
         <button type="submit">Send</button>
       </form>
@@ -102,7 +114,7 @@
     <footer>
       Footer Content
     </footer>
-    <script src="script.js"></script>
-    <script src="prism.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
   </body>
 </html>
