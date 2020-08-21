@@ -83,12 +83,20 @@
   &lt;footer&gt;&lt;/footer&gt;
 &lt;/body&gt;</code></pre>
       </article>
-      <form id="contact-form" class="contact-form">
-        <h2 class="contact-form__heading">Contact Me</h2>
-        <label>
-          Your Name:
-          <input type="text" id="name" />
-        </label>
+      <form
+        id="contact-form"
+        class="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <label>Your Name: <input type="text" name="name" /></label>
+
+        <label>Your Email: <input type="email" name="email" /></label>
+
+        <label>Message: <textarea name="message"></textarea></label>
+
+        <button type="submit">Send</button>
       </form>
     </main>
     <footer>
