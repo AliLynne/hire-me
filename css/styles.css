@@ -1,3 +1,6 @@
+:root {
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px (10px/16px = 62.5%)
@@ -144,6 +147,7 @@ pre {
     "E1 E2 E3 E4 E5";
   grid-gap: 1rem;
   padding: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .tech__heading {
@@ -184,7 +188,7 @@ pre {
 .fa-js {
   grid-area: C1;
   margin: auto;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #f792a4;
 }
 
@@ -202,13 +206,59 @@ pre {
   color: #f792a4;
 }
 
+.fa-adobe {
+  grid-area: E3;
+  margin: auto;
+  font-size: 3.5rem;
+  color: #f792a4;
+}
+
+.firebase {
+  grid-area: E1;
+  height: 3.5rem;
+  margin: auto;
+}
+
+.availability {
+}
+
 .availability__heading {
+  color: #453b7e;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.availability__list {
+  display: flex;
+}
+
+.availability__text {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.availability__full,
+.availability__part,
+.availability__contract {
+  text-align: center;
+  border: 0.5rem solid #fff;
+  background-color: #f792a4;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f1f1f1;
   margin-top: 2rem;
 }
 
@@ -222,6 +272,7 @@ pre {
   color: #453b7e;
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .contact-form__label {
@@ -231,4 +282,14 @@ pre {
 
 .contact-form__input {
   padding: 0.5rem 0.3rem;
+}
+
+.contact-form__button {
+  text-align: center;
+  border: 0.3rem solid #fff;
+  background-color: #f792a4;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }

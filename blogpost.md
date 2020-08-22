@@ -55,3 +55,10 @@ img {
 Simple and Lightweight
 I'm not a designer
 Did update the css to better reflect color scheme
+
+## What were my considerations for this project?
+
+- Display my HTML and CSS and accesibility skills & knowledge
+- Quick and easy deploy
+- No backend
+- Short term usage
