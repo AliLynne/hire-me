@@ -64,7 +64,7 @@ pre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95vw;
+  width: 100vw;
 }
 
 .header {
@@ -132,10 +132,84 @@ pre {
   font-size: 1.1rem;
 }
 
+.tech {
+  display: grid;
+  background-color: #f1f1f1;
+  grid-template-areas:
+    "header header header header header"
+    "A1 A2 A3 A4 A5"
+    "B1 B2 B3 B4 B5"
+    "C1 C2 C3 C4 C5"
+    "D1 D2 D3 D4 D5"
+    "E1 E2 E3 E4 E5";
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.tech__heading {
+  text-align: center;
+  grid-area: header;
+  font-size: 2.3rem;
+  color: #453b7e;
+}
+
+.fa-react {
+  grid-area: B2;
+  margin: auto;
+  font-size: 3.5rem;
+  color: #f792a4;
+}
+
+.fa-git {
+  grid-area: B4;
+  margin: auto;
+  font-size: 3.5rem;
+  color: #f792a4;
+}
+
+.fa-html5 {
+  grid-area: C3;
+  margin: auto;
+  font-size: 5rem;
+  color: #f792a4;
+}
+
+.fa-css3-alt {
+  grid-area: C5;
+  margin: auto;
+  font-size: 4.5rem;
+  color: #f792a4;
+}
+
+.fa-js {
+  grid-area: C1;
+  margin: auto;
+  font-size: 4rem;
+  color: #f792a4;
+}
+
+.fa-node {
+  grid-area: D2;
+  margin: auto;
+  font-size: 4rem;
+  color: #f792a4;
+}
+
+.fa-sass {
+  grid-area: D4;
+  margin: auto;
+  font-size: 4rem;
+  color: #f792a4;
+}
+
+.availability__heading {
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .contact-form__fieldset {
