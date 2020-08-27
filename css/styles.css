@@ -1,4 +1,10 @@
 :root {
+  --primary-color: #453b7e;
+  --secondary-color: #ca4c56;
+  --light-gray: #f1f1f1;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  --roboto: "Roboto", sans-serif;
+  --open: "Open Sans", sans-serif;
 }
 
 html {
@@ -25,6 +31,7 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: var(--roboto);
 }
 
 ol,
@@ -58,8 +65,13 @@ pre {
 }
 
 .blockquote {
-  border-left: 0.5rem solid #f792a4;
+  border-left: 0.5rem solid var(--secondary-color);
   padding-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.blockquote__text {
+  padding-bottom: 0.5rem;
 }
 
 .body {
@@ -71,14 +83,43 @@ pre {
 }
 
 .header {
+  margin-bottom: 1rem;
 }
 
 .header__heading {
+  font-family: var(--open);
   font-size: 4rem;
-  margin: 2rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  padding: 0.2rem;
+}
+
+.header__nav-link {
+  text-decoration: none;
 }
 
 .main {
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .remote {
@@ -91,6 +132,7 @@ pre {
 .remote__heading {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .remote__image {
@@ -104,7 +146,7 @@ pre {
   color: #ffffff;
   border-radius: 50px;
   padding: 2rem 6rem;
-  background-color: #453b7e;
+  background-color: var(--primary-color);
   text-decoration: none;
   box-shadow: 0 10px #a9aedf;
   margin-bottom: 5rem;
@@ -128,7 +170,9 @@ pre {
 }
 
 .code__heading {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .code__code {
@@ -137,7 +181,7 @@ pre {
 
 .tech {
   display: grid;
-  background-color: #f1f1f1;
+  background-color: var(--light-gray);
   grid-template-areas:
     "header header header header header"
     "A1 A2 A3 A4 A5"
@@ -153,64 +197,65 @@ pre {
 .tech__heading {
   text-align: center;
   grid-area: header;
-  font-size: 2.3rem;
-  color: #453b7e;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .fa-react {
   grid-area: B2;
   margin: auto;
   font-size: 3.5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-git {
   grid-area: B4;
   margin: auto;
   font-size: 3.5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-html5 {
   grid-area: C3;
   margin: auto;
   font-size: 5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-css3-alt {
   grid-area: C5;
   margin: auto;
   font-size: 4.5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-js {
   grid-area: C1;
   margin: auto;
   font-size: 4.5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-node {
   grid-area: D2;
   margin: auto;
   font-size: 4rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-sass {
   grid-area: D4;
   margin: auto;
   font-size: 4rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .fa-adobe {
   grid-area: E3;
   margin: auto;
   font-size: 3.5rem;
-  color: #f792a4;
+  color: var(--secondary-color);
 }
 
 .firebase {
@@ -219,13 +264,20 @@ pre {
   margin: auto;
 }
 
+.projects__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
 .availability {
 }
 
 .availability__heading {
-  color: #453b7e;
-  font-size: 2.3rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -243,7 +295,7 @@ pre {
 .availability__contract {
   text-align: center;
   border: 0.5rem solid #fff;
-  background-color: #f792a4;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
@@ -251,7 +303,7 @@ pre {
   justify-content: center;
   align-items: center;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow);
 }
 
 .contact-form {
@@ -262,6 +314,12 @@ pre {
   margin-top: 2rem;
 }
 
+.contact-form__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
 .contact-form__fieldset {
   border: none;
   display: flex;
@@ -269,7 +327,7 @@ pre {
 }
 
 .contact-form__heading {
-  color: #453b7e;
+  color: var(--primary-color);
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
@@ -286,10 +344,23 @@ pre {
 
 .contact-form__button {
   text-align: center;
-  border: 0.3rem solid #fff;
-  background-color: #f792a4;
+  border: 0.3rem solid #ffffff;
+  color: #ffffff;
+  background-color: var(--secondary-color);
   border-radius: 50px;
   padding: 0.8rem 1.5rem;
   margin: 0 auto 2rem auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow);
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  width: 100%;
+  color: #ffffff;
+}
+
+.footer__list {
+}
+
+.footer__list-item {
 }

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/3491937e6f.js"
       crossorigin="anonymous"
@@ -16,11 +20,55 @@
       Skip to Main Content
     </a>
     <header class="header">
-      <h1 class="header__heading">Hire AliLynne</h1>
+      <h1 class="header__heading">AliLynne</h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#about">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#remote">Remote</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#code">Code</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#tech">Tech</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#availability">Availability</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#contact-form">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="main-content" class="main">
-      <article class="remote">
+      <article class="about" id="about">
+        <h2 class="about__heading">About Me</h2>
+      </article>
+      <article class="remote" id="remote">
         <h2 class="remote__heading">Remote Working</h2>
+        <blockquote class="blockquote">
+          <p class="blockquote__text">
+            It was a pleasure to work with you on @_collab_lab. You refined
+            valuable skills around pair programming, the request & review cycle,
+            and team communication. I was particularly impressed by your
+            technical demos!
+          </p>
+          <footer class="blockquote__footer">
+            — Adrienne Lowe,
+            <cite class="blockquote__citation"
+              ><a href="https://the-collab-lab.codes/who-we-are/#cohort-8"
+                >Collab Lab Mentor</a
+              ></cite
+            >
+          </footer>
+        </blockquote>
         <blockquote class="blockquote">
           <p class="blockquote__text">
             Thank you to Ali for being a great pairing partner and for being on
@@ -35,7 +83,6 @@
             >
           </footer>
         </blockquote>
-        <img class="remote__image" src="/img/3694314.jpg" />
         <blockquote class="blockquote">
           <p class="blockquote__text">
             I appreciate Ali's amazing support throughout the week, with code
@@ -53,7 +100,7 @@
 
         <!-- <a href="#contact-form" class="hire-me">Hire Me</a> -->
       </article>
-      <article class="code">
+      <article class="code" id="code">
         <h2 class="code__heading">Semantic & Accessible Code</h2>
         <pre><code class="code__code language-html">&lt;body class="body"&gt;
   &lt;header&gt;
@@ -87,7 +134,7 @@
   &lt;footer&gt;&lt;/footer&gt;
 &lt;/body&gt;</code></pre>
       </article>
-      <article class="tech">
+      <article class="tech" id="tech">
         <h2 class="tech__heading">Technologies</h2>
         <i class="fab fa-react"></i>
         <i class="fab fa-git"></i>
@@ -99,7 +146,21 @@
         <i class="fab fa-adobe"></i>
         <!-- <img src="/img/logo-logomark.png" class="firebase" /> -->
       </article>
-      <article class="availability">
+      <article class="projects" id="projects">
+        <h2 class="projects__heading">Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <h3 class="projects__item-heading">Git Consensus</h3>
+            <p class="projects__item-text">
+              Description of the Project Should Go Here
+            </p>
+            <a href="#">Project Example</a>
+            <a href="#">Project Repo</a>
+          </li>
+        </ul>
+      </article>
+
+      <article class="availability" id="availability">
         <h2 class="availability__heading">Availability</h2>
         <ul class="availability__list">
           <li class="availability__full">
@@ -142,8 +203,18 @@
         <button class="contact-form__button" type="submit">Send</button>
       </form>
     </main>
-    <footer>
-      Footer Content
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          List Item
+        </li>
+        <li class="footer__list-item">
+          List Item
+        </li>
+        <li class="footer__list-item">
+          List Item
+        </li>
+      </ul>
     </footer>
     <script src="js/script.js"></script>
     <script src="js/prism.js"></script>
